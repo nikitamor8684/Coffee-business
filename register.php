@@ -22,6 +22,17 @@
         .btn-secondary{
             width:400px;
         }
+        .p{margin-left:180px;}
+        img{margin-left:250px;}
+        @media screen and (max-width: 600px) {
+            body{padding:0px}
+            .p{margin-left:40px;}
+            .btn-secondary{
+            width:200px;
+        }
+        .register{margin:0px;height:100vh;width:100vw}
+        img{margin-left:70px;}
+    }
         </style>
 </head>
 <body>
@@ -51,8 +62,8 @@ if($result){
     }
     ?>
   <div class="register">
-  <img src="images/leaves.jpg" height="100px" style="margin-left:250px;">
-  <p style="margin-left:180px;"><font size="6">REGISTER NOW</font></p> 
+  <img src="images/leaves.jpg" height="100px">
+  <p class="p"><font size="6">REGISTER NOW</font></p> 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum iusto quos quis</p>
   <form method="post">
   <div class="mb-3">

@@ -4,15 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+.top{
+  height:50px;width:100vw;background-color:green;clear:both;
+}
+.form-control{display:inline-block;width:700px;}
+@media screen and (max-width: 600px) {
+  .top{width:100vw;height:130px}
+  .form-control{width:100vw;display:block;}
+  .col-md-3{width:100vw;}
+}
+  </style>
 </head>
 <body>
   
 
-<div style="height:50px;width:1000px;background-color:green;clear:both;" >
+<div style="" class="top">
                 <span style="color:white;">
                 <b>Sign up for newsletter</b>
                 </span>
-                <input type="email" name="" style="display:inline-block;width:700px;" id="" class='form-control my-2' placeholder='Enter Your Email'/>
+                <input type="email" name="" style="" id="" class='form-control my-2' placeholder='Enter Your Email'/>
                 <button class='btn btn-primary' id='subscribe' onClick='chng()'>SUBSCRIBE</button>
                 </div>
 <div class="container-fluid p-4" style="background-image:url('images/coffee9.webp');background-repeat:no-repeat;background-size:cover;color:white;">

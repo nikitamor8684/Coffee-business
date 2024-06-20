@@ -11,6 +11,7 @@
             margin:0;
             padding:0px 140px;
             background-color:#F5F5DC;
+            height:100vh;
         }
         .login{
             height:650px;
@@ -21,8 +22,17 @@
         }
         .btn-secondary{
             width:400px;
+        }.p{margin-left:180px;}
+        img{margin-left:250px;}
+        @media screen and (max-width: 600px) {
+            body{padding:0px}
+            .login{margin:0px;height:100vh;width:100vw}
+            img{margin-left:100px}
+            .p{margin-left:40px;}
+            .btn-secondary{
+            width:200px;
         }
-     
+        }
         
         </style>
 </head>
@@ -51,8 +61,8 @@ else{
     
     ?>
   <div class="login">
-  <img src="images/leaves.jpg" height="100px" style="margin-left:250px;">
-  <p style="margin-left:180px;"><font size="6">LOGIN NOW</font></p> 
+  <img src="images/leaves.jpg" height="100px">
+  <p class="p"><font size="6">LOGIN NOW</font></p> 
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum iusto quos quis</p>
   <form method="post">
   <div class="mb-3">

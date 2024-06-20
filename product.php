@@ -9,6 +9,9 @@ include "navbar.php";
   <title>Document</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <style>
+    body{
+      margin:10px;
+    }
     .bi-cart{
       display:inline-block;
       color:green;
@@ -18,6 +21,10 @@ include "navbar.php";
     .star{
       height:20px;
       color:#d4af37; 
+    }
+    .itembox{}
+    @media screen and (max-width: 600px) {
+      .itembox{width:100vw;clear:both;margin:10px 0px}
     }
     </style>
 </head>
@@ -44,7 +51,7 @@ if ($result->num_rows > 0) {
 
     echo '<div href="#" class="All '.$row['name'].'>;
 
-        <div class="itembox overflow-hidden" style="height:400px;float:left;width:400px;margin-left:40px;background-color:whitesmoke;">';
+        <div class="itembox overflow-hidden" style="height:400px;float:left;width:400px;margin-left:70px;background-color:whitesmoke;">';
         echo '<a href=productdetail.php?id='.$row['id'].'&name='.$row['name'].'>
             <img class="h-auto  rounded-lg" src="'.$row['photo'].'" alt="" style="height:450px;width:400px;"></a>';
             echo "<b name='cost'>&#x20B9 ".$row['cost']."</b>";
